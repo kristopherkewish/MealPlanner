@@ -50,6 +50,11 @@ public class Recipe
     [StringLength(20)]
     public string Difficulty { get; set; }
 
+    public string Notes { get; set; }
+
     // Navigation property for meal plans
     public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
+
+    [DataType(DataType.DateTime)]
+    public DateTime DateCreated { get; set; } = DateTime.UtcNow;
 }
