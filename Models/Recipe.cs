@@ -6,6 +6,7 @@ namespace MealPlanner.Models;
 
 public class Recipe
 {
+    [Key]
     public int Id { get; set; }
 
     [Required]
@@ -19,7 +20,6 @@ public class Recipe
     [Required]
     public string Instructions { get; set; }
 
-    // Navigation property for ingredients
     public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
 
     [Range(1, 360)]
@@ -52,7 +52,6 @@ public class Recipe
 
     public string Notes { get; set; }
 
-    // Navigation property for meal plans
     public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
 
     [DataType(DataType.DateTime)]

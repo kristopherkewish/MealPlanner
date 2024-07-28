@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using MealPlanner.Models;
 
 namespace MealPlanner.Models;
 
 public class MealPlan
-{ 
-    [Required]
+{
+    [Key]
     public int Id { get; set; }
 
     [Required]
@@ -18,7 +17,7 @@ public class MealPlan
     [StringLength(1000)]
     public string Description { get; set; }
 
-    public List<Recipe> Recipes { get; set; } = new List<Recipe>();
+    public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
 
     public List<string> Tags { get; set; } = new List<string>();
 
@@ -42,7 +41,4 @@ public class MealPlan
 
     [DataType(DataType.DateTime)]
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
-
-    // Navigation property for recipes
-    public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
 }

@@ -7,6 +7,7 @@ namespace MealPlanner.Models;
 
 public class Ingredient
 {
+    [Key]
     public int Id { get; set; }
 
     [Required]
@@ -18,10 +19,8 @@ public class Ingredient
     [StringLength(50)]
     public string Unit { get; set; }
 
-    // Foreign key to Recipe
     public int RecipeId { get; set; }
 
-    // Navigation property to Recipe
     [ForeignKey("RecipeId")]
     public Recipe Recipe { get; set; }
 }
