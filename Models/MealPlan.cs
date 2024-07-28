@@ -17,7 +17,7 @@ public class MealPlan
     [StringLength(1000)]
     public string Description { get; set; }
 
-    public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
+    public List<Recipe> Recipes { get; set; } = new List<Recipe>();
 
     public List<string> Tags { get; set; } = new List<string>();
 

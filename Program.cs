@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MealPlanner.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<MealPlannerContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("MealPlannerContext") ?? throw new InvalidOperationException("Connection string 'MealPlannerContext' not found.")));
 
 var app = builder.Build();
 

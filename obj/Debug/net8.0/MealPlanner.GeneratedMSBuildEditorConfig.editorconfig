@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MealPlanner
 build_property.RootNamespace = MealPlanner
@@ -26,8 +34,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/MealPlans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVhbFBsYW5zL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/MealPlans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVhbFBsYW5zL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/MealPlans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVhbFBsYW5zL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/MealPlans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVhbFBsYW5zL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/MealPlans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVhbFBsYW5zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Recipes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Recipes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Recipes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Recipes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Recipes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kriskewish/Projects/Personal/In Progress/Meal Planner/MealPlanner/Pages/Shared/_ValidationScriptsPartial.cshtml]

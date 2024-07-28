@@ -1,0 +1,79 @@
+@page
+@model MealPlanner.Pages.MealPlans.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MealPlan</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Tags)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Tags)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Calories)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Calories)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.ProteinInGrams)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.ProteinInGrams)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.CarbsInGrams)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.CarbsInGrams)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.FatsInGrams)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.FatsInGrams)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Difficulty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Difficulty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.Duration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.Duration)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MealPlan.DateCreated)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MealPlan.DateCreated)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.MealPlan.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

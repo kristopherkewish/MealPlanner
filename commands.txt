@@ -1,0 +1,3 @@
+dotnet aspnet-codegenerator razorpage -m Recipe -dc MealPlanner.Data.MealPlannerContext -udl -outDir Pages/Recipes --referenceScriptLibraries --databaseProvider sqlite
+
+dotnet aspnet-codegenerator razorpage -m MealPlan -dc MealPlanner.Data.MealPlannerContext -udl -outDir Pages/MealPlans --referenceScriptLibraries --databaseProvider sqlite

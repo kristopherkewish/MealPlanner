@@ -52,7 +52,7 @@ public class Recipe
 
     public string Notes { get; set; }
 
-    public List<MealPlanRecipe> MealPlanRecipes { get; set; } = new List<MealPlanRecipe>();
+    public List<MealPlan> MealPlans { get; set; } = new List<MealPlan>();
 
     [DataType(DataType.DateTime)]
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;

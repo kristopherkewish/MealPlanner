@@ -1,0 +1,80 @@
+@page
+@model MealPlanner.Pages.MealPlans.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MealPlan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MealPlan.Id" />
+            <div class="form-group">
+                <label asp-for="MealPlan.Name" class="control-label"></label>
+                <input asp-for="MealPlan.Name" class="form-control" />
+                <span asp-validation-for="MealPlan.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.Description" class="control-label"></label>
+                <input asp-for="MealPlan.Description" class="form-control" />
+                <span asp-validation-for="MealPlan.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.Tags" class="control-label"></label>
+                <input asp-for="MealPlan.Tags" class="form-control" />
+                <span asp-validation-for="MealPlan.Tags" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.Calories" class="control-label"></label>
+                <input asp-for="MealPlan.Calories" class="form-control" />
+                <span asp-validation-for="MealPlan.Calories" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.ProteinInGrams" class="control-label"></label>
+                <input asp-for="MealPlan.ProteinInGrams" class="form-control" />
+                <span asp-validation-for="MealPlan.ProteinInGrams" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.CarbsInGrams" class="control-label"></label>
+                <input asp-for="MealPlan.CarbsInGrams" class="form-control" />
+                <span asp-validation-for="MealPlan.CarbsInGrams" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.FatsInGrams" class="control-label"></label>
+                <input asp-for="MealPlan.FatsInGrams" class="form-control" />
+                <span asp-validation-for="MealPlan.FatsInGrams" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.Difficulty" class="control-label"></label>
+                <input asp-for="MealPlan.Difficulty" class="form-control" />
+                <span asp-validation-for="MealPlan.Difficulty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.Duration" class="control-label"></label>
+                <input asp-for="MealPlan.Duration" class="form-control" />
+                <span asp-validation-for="MealPlan.Duration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MealPlan.DateCreated" class="control-label"></label>
+                <input asp-for="MealPlan.DateCreated" class="form-control" />
+                <span asp-validation-for="MealPlan.DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
